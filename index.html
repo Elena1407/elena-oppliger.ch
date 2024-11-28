@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Lien vers les icônes fontawesome (facultatif) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Mon Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#competences">Compétence</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="container">
+            <h1>Bienvenue sur mon Portfolio</h1>
+            <p>Apprentie médiamaticienne depuis 2 ans !</p>
+            <a href="#portfolio" class="btn">Voir mon travail</a>
+        </div>
+    </header>
+
+    <!-- Section À propos de moi -->
+    <section id="about">
+        <div class="container">
+            <h2 class="about-title">À propos de moi</h2>
+            <div class="about-content">
+                <p>Je suis apprentie médiamaticienne et freelance pendant mon temps libre. Je crée, produis et organise des projets, de la première idée jusqu’au rendu final. Je suis polyvalente, autonome et j’aime les défis. Je peux créer un logo, refaire un site web, ou encore réaliser des montages vidéos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2 class="project-title">Mes projets</h2>
+        <div class="projects-grid">
+            <!-- Projet 1 -->
+            <div class="project-item">
+                <a href="img/jumpp.png" class="lightbox">
+                    <img src="img/jumpp.png" alt="Projet 1">
+                </a>
+                <p>CIE 3 - Photo</p>
+            </div>
+            <!-- Projet 2 -->
+            <div class="project-item">
+                <a href="img/jumpp.png" class="lightbox">
+                    <img src="img/jumpp.png" alt="Projet 2">
+                </a>
+                <p>Description du projet 2</p>
+            </div>
+            <!-- Projet 3 -->
+            <div class="project-item">
+                <a href="img/jumpp.png" class="lightbox"></a>
+                <img src="img/jumpp.png" alt="Projet 3">
+                <p>Description du projet 3</p>
+            </div>
+            <!-- Projet 4 -->
+            <div class="project-item">
+                <a href="img/jumpp.png" class="lightbox"></a>
+                <img src="img/jumpp.png" alt="Projet 4">
+                <p>Description du projet 4</p>
+            </div>
+    </section>
+    
+
+    <section id="competences">
+        <div class="container">
+            <h2>Mes Compétences</h2>
+            <div class="skills-grid">
+                <div class="skill-item" data-aos="fade-up">
+                    <i class="fas fa-code"></i>
+                    <h3>Développement Web</h3>
+                    <p>Je crée des sites interactifs et responsives avec HTML, CSS et JavaScript, qui s'adaptent parfaitement à tous les appareils !</p>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Design Graphique</h3>
+                    <p>Je crée des visuels qui attirent l'œil : logos, flyers, maquettes web et montage vidéo, pensés pour être à la fois impactants et parfaitement adaptés à vos besoins !</p>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>Gestion de Projets</h3>
+                    <p>Je m’occupe de tout pour votre projet : du cahier des charges au suivi, en passant par les devis, le planning et la coordination. Bref, vous pouvez compter sur moi du début à la fin !</p>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="600">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Marketing</h3>
+                    <p>Faites-vous remarquer et atteignez les bonnes personnes avec des stratégies qui marchent, puis voyons ensemble ce qui cartonne vraiment !</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+<!-- Section Contact -->
+<section id="contact">
+    <div class="container">
+        <h2>Contactez-moi</h2>
+        <p>Vous avez une question, une proposition de projet, ou simplement envie de discuter ? N'hésitez pas à me contacter !</p>
+        
+        <!-- Formulaire de Contact -->
+        <form id="contact-form" class="contact-form">
+            <input type="text" id="name" placeholder="Votre nom" required>
+            <input type="email" id="email" placeholder="Votre email" required>
+            <input type="text" id="subject" placeholder="Objet" required>
+            <textarea id="message" placeholder="Votre message" required></textarea>
+            <div class="form-row">
+                <label for="location">Votre localisation</label>
+                <input type="text" id="location" placeholder="Ville, Pays">
+            </div>
+            <button type="submit">Envoyer le message</button>
+        </form>
+
+        <!-- Liens vers les Réseaux Sociaux -->
+        <div class="social-media">
+            <h3>Suivez-moi</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/eli.opp.7/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/elenaa_1407" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/elena-oppliger-6486aa291/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="tel:+41 79 943 64 14"><i class="fas fa-phone-alt"></i></a>
+
+            </div>
+
+            <div class="map">
+                <h3>Où me trouver ?</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15717.47825168769!2d6.7101753619318!3d46.75554325192065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478dd0fca1e78e11%3A0x401ffca74a692de4!2s1407%20M%C3%A9zery-pr%C3%A8s-Donneloye!5e1!3m2!1sfr!2sch!4v1732794238998!5m2!1sfr!2sch" 
+                    width="100%" 
+                    height="300" 
+                    frameborder="0" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            
+</section>
+
+    <!-- Lien vers le fichier JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
